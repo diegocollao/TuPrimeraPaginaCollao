@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mi Blog</title>
+</head>
+<body>
+    <h1>Bienvenido a Mi Blog</h1>
+    <a href="{% url 'home' %}">Inicio</a> |
+    <a href="{% url 'agregar_autor' %}">Agregar Autor</a> |
+    <a href="{% url 'buscar_post' %}">Buscar Post</a>
+    <hr>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>

@@ -1,0 +1,10 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+<h2>Lista de Posts</h2>
+<ul>
+    {% for post in posts %}
+        <li>{{ post.titulo }} - {{ post.autor.nombre }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
